@@ -1,0 +1,34 @@
+html,body
+{
+	margin:0;
+	padding:0;
+	background-color:#FFFFFF;
+	font-family: "Microsoft YaHei" ! important; 
+}
+.container-fluid
+{
+	width:100%;
+	height:100%;
+}
+/* .header
+{
+	height:80px;
+	line-height:80px;
+	padding:0px 20px; 
+	position:relative;
+	z-index:2;
+	overflow:hidden;
+} */
+.body
+{
+}
+ul,li
+{
+	margin:0;
+	padding:0;
+}
+ul li
+{
+	list-style:none;
+	
+}

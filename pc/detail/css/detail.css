@@ -1,0 +1,543 @@
+@charset "utf-8";
+.skippr-previous , .skippr-next
+{
+	background-image:url(../../core/assets/img_default.gif);
+}
+.skippr-previous
+{
+	filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.707,M12=0.707,M21=-0.707,M22=0.707,SizingMethod='auto expand');  
+}
+.skippr-next
+{
+	filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.707,M12=0.707,M21=-0.707,M22=0.707,SizingMethod='auto expand');  
+}
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+body{
+	font-size: 12px;
+}
+.container{
+	margin:0 auto;	
+}
+.powerDiv >div
+{
+	padding-top:0 !important;
+}
+
+.container .banner .housePic{	
+	position:relative;
+	width:100%;
+	height:594px;	
+	
+}
+
+.namepanout
+{
+	position: absolute;
+    width: 100%;
+    height: 136px;
+    bottom: 0px;
+	background-image:url(../assets/detilname.png);
+}
+.container .banner .housePic .namepan {
+	position: absolute;
+    bottom: 0px;
+    width: 960px;
+    left: 50%;
+    margin-left: -470px;
+    color: #FFFFFF;
+}
+
+.container .banner .housePic .namepan span {
+	float: left;
+	margin-right: 20px;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	font-weight: 600;
+}
+
+.container .banner .housePic .namepan .adress{
+	font-size: 18px;
+    vertical-align: text-bottom;
+    line-height: 50px;
+}
+.container .detail {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.container .detail .tag {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	z-index: 999;
+}
+
+.container .detail .tag ul li {
+	float: left;
+	width: 180px;
+	height: 40px;
+	padding: 0 15px 0 15px;
+	line-height: 40px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+
+.container .detail .tag ul li.active {
+	background: #259CED;
+	color: #FFFFFF;
+}
+.container .detail .tagpos
+{
+	width: 960px;
+    margin: 0 auto;
+    height: 46px;
+    display: none;
+}
+
+.container .detail .tag ul li{
+	float:left;
+	width:180px;
+	height:40px;	
+	padding:0 15px 0 15px;
+	line-height:40px;
+	font-size:14px;
+	font-family:"微软雅黑";
+	text-align: center;
+	cursor:pointer;
+}
+.container .detail .tag ul li.active
+{
+	background:#259CED;
+	color:#FFFFFF;
+}
+
+.container .detail .tag ul li.active a
+{
+	color:#FFFFFF;
+}
+.container .detail .tag ul li a{
+	color:#666666;
+	width: 180px;
+    height: 40px;
+    display: inline-block;	   
+}
+.container .detail .tag ul li a.active{
+	color:#ffffff;
+}
+/* .container .detail .tag ul li:hover{
+	background-color:#259CED;
+}
+.container .detail .tag ul li:hover a{
+	color:white;
+} */
+.container .detail .tag .tag_underline {
+	clear: both;
+	height: 6px;
+	background-color: #259CED;
+}
+
+/*房产介绍*/
+.detail .houseIntroduce {
+	margin-top: 30px;
+}
+
+.detail .houseIntroduce h3 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+
+.detail .houseIntroduce .houseIntroduce_underline {
+	margin-top: 12px;
+	height: 2px;
+	background-color: #666666;
+}
+
+.houseIntroduce .houseIntroduce_content {
+	margin-top: 26px;
+}
+
+.houseIntroduce .houseIntroduce_content p {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+}
+
+.houseIntroduce .houseIntroduce_content table tr td {
+	width: 562px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: #333333;
+	padding-bottom: 12px;
+}
+
+.houseIntroduce .houseIntroduce_content table tr td span {
+	font-weight: normal;
+}
+.houseIntroduce .houseIntroduce_content table tr td .mleft {
+	margin-left:12px;
+}
+
+/*周边设施*/
+.houseAround {
+	margin-top: 18px;
+	margin-bottom:35px;
+}
+
+.detail .houseAround h3 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+
+.detail .houseAround_underline {
+	margin-top: 12px;
+	height: 2px;
+	background-color: #666666;
+}
+
+.houseAround .houseAround_content {
+	position: relative;
+	margin-top: 21px;
+}
+
+.houseAround .houseAround_content table tr {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color: #333333;
+	margin-bottom:18px;
+}
+.houseAround .houseAround_content table tr .th{
+	padding-top:5px;
+	padding-bottom:3px;
+	width:70px;
+	margin-right:15px;
+}
+.houseAround .houseAround_content .houseAround_content_d {	
+	padding-top:5px;
+	padding-bottom:3px;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;	
+	margin-left: 8px;
+	word-break: break-all; 		
+}
+/*房源出租*/
+.detail .houseLend {
+	margin: 0;
+	padding: 0;
+	width: 960px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.houseLend h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.houseLend .houseLend_nav {
+	height: 25px;
+	margin-bottom: 12px;
+	width: 960px;
+}
+
+.houseLend .houseLend_nav .houseLend_nav_c {
+	position: relative;
+	top: 4px;
+}
+
+.houseLend .houseLend_nav .lend_status {
+	color: #194382;
+	margin-left: 54px;
+}
+
+.houseLend .houseLend_nav .lend_sort {
+	color: #194382;
+}
+
+.houseLend .houseLend_nav a {
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	border: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 24px;
+}
+
+.houseLend .houseLend_nav a:hover {	
+	color: #149cf2;
+}
+
+.houseLend .houseLend_nav a.active {	
+	color: #149cf2;
+}
+
+.houseLend .houseLend_nav .sortde {
+	visibility:hidden;
+	margin-left: 5px;
+}
+.houseLend .houseLend_nav .ASC .sortde:after {
+	content:"\2191";
+	
+}
+.houseLend .houseLend_nav .DESC .sortde:after {
+	content:"\2193";
+	
+}
+.houseLend .houseLend_nav .active .sortde {
+	visibility:visible;
+}
+
+.houseLend .houseLend_underline {
+	clear: both;
+	height: 2px;
+	background-color: #666666;
+	margin-top: 12px;
+	width: 960px;
+}
+
+.houseLend .houseLend_detail {
+	width: 980px;
+	font-size: 18px;
+	margin-top: 26px;
+	font-family: "微软雅黑";
+}
+
+
+.houseLend .houseLend_detail .h_desc {
+	height: 100px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 35px;
+	padding:15px 5px;
+}
+.h_desc p
+{
+	font-size:0;
+}
+.h_desc p span
+{
+	font-size:14px;
+}
+.houseLend .houseLend_detail .h_desc p span {
+	margin:0 5px;
+}
+.houseLend .houseLend_detail .h_desc.line_0 {
+	line-height: 70px;
+	text-align: center;
+}
+.houseLend .houseLend_detail .houseLend_detail_l .h_desc {
+	line-height: 70px;
+	text-align: center;
+
+}
+.houseLend .houseLend_detail ul li {
+	font-size: 12px;
+	margin-top: 20px;
+	float: left;
+	margin-left: 10px;
+}
+
+.houseLend .houseLend_detail ul .timespace {
+	margin-left:24px;
+}
+
+.houseLend .houseLend_detail>div {
+	background-color: #FAFAFA;
+	width: 310px;
+	height: 150px;
+	margin-right: 16px;
+	margin-bottom: 20px;
+}
+.houseLend .houseLend_detail  .h_header
+{
+	height: 50px;
+}
+.houseLend .houseLend_detail  .h_header_l {
+	width: 90px;
+	color: white;
+	font-family: "微软雅黑";
+	background-color: #B63FD2;
+	line-height: 50px;
+	text-align: center;
+}
+
+.houseLend .houseLend_detail .h_header_r {
+	width: 220px;
+	font-family: "微软雅黑";
+	background-color: #E0B7EA;
+	line-height: 50px;
+	text-align: center;
+	height: 50px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.houseLend .houseLend_detail_l .h_header_l
+{
+	background-color: #3BD087;
+}
+.houseLend .houseLend_detail_l .h_header_r
+{
+	background-color: #91E6BC;
+}
+
+.houseLend .houseLend_detail_r .h_header_l
+{
+	background-color: #3f6dd5;
+}
+.houseLend .houseLend_detail_r .h_header_r
+{
+	background-color: #a3cfee;
+}
+
+.houseLend .houseLend_detail .h_header_r span {
+	margin-right: 20px;
+}
+
+.houseLend .houseLend_detail_more {
+	cursor: pointer;
+	width: 400px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #1999f2;
+	color: #1999f2;
+	font-family: "微软雅黑";
+	margin-top: 6px;
+	margin-bottom: 30px;
+}
+
+.houseLend .houseLend_detail_more span {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background: url(/sunproperty-war/pc/detail/assets/dropdown.png);
+	vertical-align: middle;
+	margin-left: 10px;
+}
+/*其他房产信息*/
+.other {
+	clear: both;	
+}
+
+.other .other_underline {
+	height: 2px;
+	background-color: #666666;
+	margin-top: 12px;
+	margin-bottom: 26px;
+}
+
+
+.other_detail .other_detailInfo {
+	width: 960px;
+	margin: 0 auto;
+	height: 270px;
+}
+
+
+ .other_detail{
+	 position: relative;
+	 overflow:hidden;
+	 margin-bottom: 40px;
+	 height: 220px;
+	 width:960px;
+}
+ .other_detail .other_detailInfo_housePic{
+	width: 220px;
+    height: 220px;
+    background-position: center;
+	Background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+/*	-ms-behavior: url(/sunproperty-war/pc/core/css/backgroundsize.min.htc);
+    behavior:  url(/sunproperty-war/pc/core/css/backgroundsize.min.htc);*/
+}
+.skippr > DIV
+{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-size: cover;
+	background-position: 50% 62.5%;
+}
+
+.other_detail  .leftdown{
+	position:absolute;
+	cursor:pointer;	
+	top:92px;
+	left:10px;
+	z-index:999;
+	display:inline-block;	
+	background-image:url(../assets/leftdown.png);
+	width:36px;
+	height:36px;
+}
+.fl.other_detailInfo {
+    width: 2880px;
+	position: absolute;
+}
+.other_detail .rightdown{
+    cursor:pointer;	
+	position:absolute; 
+	top: 92px;
+	right:10px;
+	z-index:999;
+	display:inline-block;
+	background-image:url(../assets/rightdown.png);
+	width:36px;
+	height:36px;
+}
+.other_detail .other_detailInfo_content{
+	 position: relative;
+	 width: 220px;
+   	 height: 220px;
+	 margin-right:10px;
+	 margin-left:10px;
+	 background: #eeeeee;
+}
+.other_detail .other_detailInfo_housePrice 
+{
+	position: absolute;
+    width: 140px;
+    height: 90px;
+    left: 40px;
+    top: 40px;
+    background: url(../assets/otherinfo.png);
+    text-align: center;
+    padding-top: 50px;
+}
+.other_detail .other_detailInfo_housePrice p{
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#FFFFFF;
+}
+/*版本信息*/
+.copyright{
+	margin-top: 0px;
+    border-top: 1px solid #ddd;
+   padding-top: 15px;       
+    font-size:12px;
+    width:960px;
+    margin:0 auto;
+}
+.copyright div{
+	text-align:center;
+	height:30px;
+	line-height:30px; 
+}

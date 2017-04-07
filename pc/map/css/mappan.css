@@ -1,0 +1,375 @@
+/* CSS Document */
+html,body
+{
+	height:100%;
+    width: 100%;
+    overflow: hidden;
+}
+img{ 
+	border-style:none; 
+} 
+.header .head{
+	width:auto;
+	margin-left:20px;
+}
+.body
+{
+    width: 100%;
+	position: absolute;
+	top: 80px;
+	bottom: 0px;
+	left: 0px;
+}
+.listpan
+{
+	position: absolute;
+    height: 100%;
+    width: 339px;
+    right: 0;
+    top: 0;
+	border-left:1px solid #BFBFBF;
+}
+.listpan>.tigger
+{
+	position: absolute;
+    display: inline-block;
+    height: 48px;
+    width: 22px;
+    background: aliceblue;
+    margin-left: -23px;
+    z-index: 99;
+    top: 100px;
+	background-image:url(../assets/tr.png);
+	cursor:pointer;
+}
+.listpan>.tigger.hide
+{
+	background-image:url(../assets/tc.png)
+}
+.listpan .sum
+{
+	height: 49px;
+    line-height: 50px;
+    text-align: center;
+    background-color: black;
+	font-size:18px;
+	color:#666666;
+	background:#e9e9e9;
+	border-bottom:1px solid #BFBFBF;
+}
+.listpan .sum em
+{
+	color:#F38549;
+	margin:0 4px;
+	font-style:normal;
+}
+.listpan .sort
+{
+	height: 49px;
+	color:#666666;
+	font-size:0px;
+	border-bottom:1px solid #BFBFBF;
+}
+.sort .panbtn span
+{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+    margin-left: 4px;
+	background-image:url(../assets/sort.png);
+}
+.sort .panbtn[direction=asc] span , .sort .panbtn.asc span , .sort .panbtn.ASC span 
+{
+	background-image:url(../assets/asc.png);
+}
+.sort .panbtn[direction=desc] span , .sort .panbtn.desc span , .sort .panbtn.DESC span
+{
+	background-image:url(../assets/desc.png);
+}
+
+.listpan .panbtn
+{
+	cursor:pointer;
+	display:inline-block;
+	font-size:16px;
+	width:169px;
+	height:49px;
+	text-align:center;
+	line-height:50px;
+}
+.listpan .list
+{
+	position: absolute;
+    width: 340px;
+    right: 0;
+    top: 100px;
+    bottom: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.listpan .panbtn:first-child
+{
+	width:169px;
+	border-right:1px solid #BFBFBF;
+}
+.listpan .panbtn.active
+{
+	background:#dee6f0;
+	color:#4771BA;
+}
+.listpan .panbtn:hover
+{
+	background:#dee6f0;
+	color:#4771BA;
+}
+.list ul
+{
+	padding:2px;
+}
+.list ul li
+{
+	padding:10px;
+}
+.buildimg
+{
+	width: 120px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: cover;
+	/*-ms-behavior: url(/sunproperty-war/pc/core/css/backgroundsize.min.htc);
+    behavior:  url(/sunproperty-war/pc/core/css/backgroundsize.min.htc);*/
+}
+
+
+.buildinfo{
+	display: inline-block;
+    width: 170px;
+	height: 100px;
+    float: right;
+	font-size: 0;
+}
+.buildinfo p{
+	margin:0;
+	padding:6px 0px;
+}
+.buildinfo .buildname
+{
+	line-height: 22px;
+    font-size: 18px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+}
+.buildinfo .buildname a{
+	 color: #333333 !important;
+	text-decoration:none !important;
+}
+.buildinfo .buildprice
+{
+	font-size:12px;
+	line-height:12px;
+	color:#F26512;
+}
+.buildinfo .buildarea
+{
+	font-size:12px;
+	line-height:12px;;
+	color: #666666;
+    margin-left: 20px;
+}
+.buildinfo .buildaddress
+{
+	line-height: 16px;
+    font-size: 12px;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+    display: inline-block;
+    height: 32px;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+.buildinfo .buildaddress>span
+{
+	display:inline-block;
+	height: 16px;
+    width: 16px;
+	position:absolute;
+	background-image:url(../assets/adps.png);
+	cursor:pointer;
+}
+.buildinfo .buildaddress div.addr
+{
+	border-spacing: 0px;
+	padding-left:24px;
+}
+.buildinfo .buildaddress td
+{
+	padding:0px;
+}
+.mappan
+{ 
+    height: 100%;
+    margin-right: 340px;
+}
+.barpan
+{
+	height: 30px;
+    position: relative;
+    z-index: 2;
+	background:#f5f5f5;
+	padding:10px;
+	font-size:0px;
+}
+.barpan>a
+{
+	font-size: 14px;
+    line-height: 30px;
+	color:#666666;
+	text-decoration:none;
+}
+.select
+{
+	display: inline-block;
+    position: relative;
+    font-size: 14px;
+	    white-space: nowrap;
+	color:#333333;
+    vertical-align: middle;
+    height: 14px;
+    border: 1px solid #c9c9c9;
+   	width: 108px;
+    line-height: 14px;
+    margin: 0 10px;
+    background-color: #ffffff;
+    padding: 7px 0px 7px 10px;
+	cursor:pointer;
+	-webkit-box-shadow:  0 0 5px #c9c9c9;
+    -moz-box-shadow:  0 0 5px #c9c9c9;
+    box-shadow: 0 0 5px #c9c9c9;
+	float: left;
+}
+.select>span{
+	width: 85px;
+    display: inline-block;
+    overflow: hidden;
+}
+.select:nth-child(3)
+{
+    width: 140px;
+}
+.select ul
+{
+	position: absolute;
+    min-width: 118px;
+    border: 1px solid #c9c9c9;
+    background: #FFFFFF;
+    top: 28px;
+    left: -1px;
+	display:none;
+}
+.select:hover>ul
+{
+	display: block;
+   
+}
+.select.sc:hover>ul,.select.unitselect:hover>ul
+{
+	 max-height: 380px;
+    overflow: auto;
+}
+.select ul li
+{
+	line-height: 30px;
+    padding: 0 10px;
+    color: #333333;
+	cursor:pointer;
+	    white-space: nowrap;
+}
+.select ul>li:hover ,.select ul>li.active
+{
+	color:#FFFFFF;
+	background-color:#76bfee;
+}
+.select ul>li.custom
+{
+	 color: #333333 !important;
+	 background-color:#FFFFFF !important;
+	 width: 130px;
+}
+.select>ul>li:hover ul
+{
+	display:block;
+}
+.select.unitselect{
+	/*width:220px;*/
+}
+.select.unitselect>span{
+	/*width:190px;*/
+}
+.twoinspan
+{
+	border: 1px solid #c9c9c9;
+    min-width: 70px;
+    display: inline-block;
+    line-height: 0;
+}
+.twoinspan>input
+{
+	width: 26px;
+    border: 0;
+    padding: 2px 0px;
+    line-height: 14px;
+	color: #333333;
+}
+.twoinspan>span
+{
+	color:#c9c9c9;
+	padding:0 4px;
+}
+.select ul li>a.btn
+{
+	display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+    background-color: #f26519;
+    margin-top: -1px;
+    width: 40px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 0px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.select>ul>li>ul
+{
+	left: 118px;
+    top: -1px;
+}
+.select:after
+{
+	content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    /* float: right; */
+    margin: 1px 8px;
+    background-image: url(../assets/arrow.png);
+    position: absolute;
+    right: 0;
+}
+.mapdiv
+{
+	position: absolute;
+    top: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 340px;
+}
+
